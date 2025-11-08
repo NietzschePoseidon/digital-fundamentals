@@ -7,7 +7,7 @@ do
   for file in $(cat $path$i)
   do
     mail=$(echo $file | cut -d ":" -f"3")
-    if [[ $mail =~ "@spbstu.ru$" ]]
+    if [[ $mail =~ "@spbstu.ru" ]]
     then
       echo -e "Почта: $mail"
     fi
